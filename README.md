@@ -22,7 +22,7 @@ Clone this repo (if you don't know how to do that, click the green **Code** butt
 ./setup.sh --install
 ```
 
-This will copy the binary to `/usr/local/bin` (you can use a different directory if you like, by editing the setup script and changing the `BINDIR` variable at the top). It also creates and starts up the LaunchAgent. From then on, you can use the `display-is-sleeping` command in your scripts or anywhere else that's needed.
+This will copy the binary to `/usr/local/bin` (you can use a different directory if you like, by editing the setup script and changing the `BINDIR` variable at the top). It also creates and starts up the LaunchAgent. From then on, you can use the `display-is-sleeping` command in your scripts.
 
 To **Uninstall**, simply re-run the script, passing `--uninstall`:
 ```bash
