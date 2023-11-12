@@ -33,7 +33,7 @@ This will unload and remove the LaunchAgent, stop any background processes and r
 ### Usage
 
 Example use in a script
-```
+```bash
 if display-is-sleeping ; then
   # ...put code here to run if the screen is dark
 else
