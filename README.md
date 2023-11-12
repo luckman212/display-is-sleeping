@@ -28,6 +28,7 @@ To **Uninstall**, simply re-run the script, passing `--uninstall`:
 ```
 ./setup.sh --uninstall
 ```
+This will unload and remove the LaunchAgent, stop any background processes and remove the command itself from wherever it was installed.
 
 ### Usage
 
