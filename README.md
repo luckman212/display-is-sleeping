@@ -6,11 +6,11 @@ This is a small Objective-C program that will report the current sleeping/awake 
 
 The program can be called on its own without arguments and will simply return a POSIX exit code of 0 (sleeping) or 1 (awake) to indicate the screen's status. So you can run something like:
 
-```
+```bash
 if ! display-is-sleeping ; then echo "screen is awake!"; fi
 ```
 or more concisely
-```
+```bash
 display-is-sleeping || echo "screen is awake!"
 ```
 
@@ -18,14 +18,14 @@ display-is-sleeping || echo "screen is awake!"
 
 Clone this repo (if you don't know how to do that, click the green **Code** button above, then **Download ZIP**). Once you have the bits on your disk, open a Terminal and run the command below:
 
-```
+```bash
 ./setup.sh --install
 ```
 
 This will copy the binary to `/usr/local/bin` (you can use a different directory if you like, by editing the setup script and changing the variables at the top). It also creates and starts up the LaunchAgent. From then on, you can simply use the `` command in your scripts or anywhere else that's needed.
 
 To **Uninstall**, simply re-run the script, passing `--uninstall`:
-```
+```bash
 ./setup.sh --uninstall
 ```
 This will unload and remove the LaunchAgent, stop any background processes and remove the command itself from wherever it was installed.
@@ -42,7 +42,7 @@ fi
 ```
 
 Get current status as a string (prints `true` or `false`)
-```
+```bash
 display-is-sleeping --status
 ```
 
