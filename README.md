@@ -16,13 +16,13 @@ display-is-sleeping || echo "screen is awake!"
 
 ### Installation (and Uninstallation)
 
-Clone this repo (if you don't know how to do that, click the green **Code** button above, then **Download ZIP**). Once you have the bits on your disk, open a Terminal and run the command below:
+Clone this repo (if you don't know how to do that, click the green **Code** button above, then **Download ZIP**). Once you have the bits on your disk, open a Terminal in the directory that contains the cloned files and run the command below:
 
 ```bash
 ./setup.sh --install
 ```
 
-This will copy the binary to `/usr/local/bin` (you can use a different directory if you like, by editing the setup script and changing the variables at the top). It also creates and starts up the LaunchAgent. From then on, you can simply use the `` command in your scripts or anywhere else that's needed.
+This will copy the binary to `/usr/local/bin` (you can use a different directory if you like, by editing the setup script and changing the `BINDIR` variable at the top). It also creates and starts up the LaunchAgent. From then on, you can simply use the `` command in your scripts or anywhere else that's needed.
 
 To **Uninstall**, simply re-run the script, passing `--uninstall`:
 ```bash
